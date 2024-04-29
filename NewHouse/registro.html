@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="css/css.css" as="style">
+    <link href="css/css.css" rel="stylesheet">
+</head>
+<body>
+    <section class="portada1">
+        <div class="portada-contenido1">
+            <h2 class="empresa">**Registro**</h2>
+        </div>
+    </section>
+    <h2>REGISTRO PARA NUEVOS USUARIOS</h2>
+    <form class="formulario">
+        <section id="formulario">
+            <form name="Nuevo Usuario" method="post" action="php/ConexionNuevoUsuario.php">
+                Nickname:<br>
+                <input type="text" name="Nickname"="[a-zA-Z0-9]+" placeholder="ingrese su Nickname" required><br>
+                contraseña:<br>
+                <input type="password" name="contraseña" maxlength="20" autocomplete="new-password"
+                    placeholder="ingrese su contraseña" required><br>
+                nombre:<br>
+                <input type="text" name="nombre" placeholder="ingrese su nombre" required><br>
+                apellidos:<br>
+                <input type="text" name="apellidos" placeholder="ingrese sus apellidos" required><br>
+                presupuesto:<br>
+                <input type="presupuesto" name="cantidad" min="5000" placeholder="ingrese su presupuesto" required><br>
+                <hr>
+                <a value="Registrate" class="boton" href="entrada.html">Registrate</a>
+                <input type="reset" class="boton" value="Borrar">
+                <hr>
+            </form>
+    </form>
+    </section>
+    <h2>INICIAR SESION</h2>
+    <form class="formulario">
+    <section>
+            <form name="contacto" method="post" action="php/IniciarSesion.php">
+            Nickname:<br>
+            <input type="text" name="Nickname" placeholder="ingrese su Nickname" required><br>
+            contraseña:<br>
+            <input type="password" name="contraseña" autocomplete="off" placeholder="ingrese su contraseña"
+                required><br>
+            <hr><!--LINEA-->
+            <a class="boton" href="entrada.html">Iniciar Sesion</a>
+           <!-- <input  type="submit" name="Enviar" class="boton" value="Iniciar Sesion" href="entrada.html"> --> 
+            <hr>
+        </form>
+    </section>
+    </form>
+    
+</body>
+</html>
